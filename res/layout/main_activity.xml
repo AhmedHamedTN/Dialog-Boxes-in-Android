@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/buttonList"
+        android:onClick="exit"
+        android:text="@string/button_exit" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/buttonList"
+        android:onClick="dialogAbout"
+        android:text="@string/button_about" />
+
+    <Button
+        android:id="@+id/buttonAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonCustom"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/buttonCustom"
+        android:layout_marginTop="75dp"
+        android:onClick="dialogAlert"
+        android:text="@string/button_alert_dialog" />
+
+    <Button
+        android:id="@+id/buttonCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAlert"
+        android:layout_centerHorizontal="true"
+        android:onClick="dialogCustom"
+        android:text="@string/button_alert_custom" />
+
+    <Button
+        android:id="@+id/buttonList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonCustom"
+        android:layout_alignRight="@+id/buttonCustom"
+        android:layout_below="@+id/buttonCustom"
+        android:onClick="dialogList"
+        android:text="@string/button_alert_list" />
+
+</RelativeLayout>
