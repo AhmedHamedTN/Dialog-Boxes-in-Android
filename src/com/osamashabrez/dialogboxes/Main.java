@@ -23,7 +23,7 @@ public class Main extends Activity {
     }
 
     public void dialogAbout(View v) {
-		Dialog dialog;
+		AlertDialog dialog;
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle(R.string.dialog_about)
 		  	.setMessage(Html.fromHtml("This tutorial on Dialog Boxes was written for <a href=\"http://osamashabrez.com\">OsamaShabrez.com</a>"))
@@ -35,7 +35,7 @@ public class Main extends Activity {
     }
 
     public void dialogAlert(View v) {
-		Dialog dialog;
+		AlertDialog dialog;
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle(R.string.dialog_about)
 		  	.setMessage(Html.fromHtml("This tutorial on Dialog Boxes was written for <a href=\"http://osamashabrez.com\">OsamaShabrez.com</a>"))
